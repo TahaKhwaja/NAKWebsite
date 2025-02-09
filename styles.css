@@ -6,6 +6,12 @@
     font-family: 'Merriweather', sans-serif;
 }
 
+/* Prevent horizontal scrolling */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* Set light green background for the whole page */
 body {
     background-color: #d4edda; /* Light green background */
@@ -36,8 +42,8 @@ body {
 
 #navbar__logo {
     text-decoration: none;
-    font-size: 2rem;
-    color: #ffffff; /* Changed to black */
+    font-size: 1.5rem; /* Adjusted for mobile */
+    color: #ffffff;
     font-weight: bold;
     white-space: nowrap; /* Prevents text from wrapping */
 }
@@ -48,7 +54,7 @@ body {
 }
 
 .navbar__item {
-    margin: 0 ;
+    margin: 0;
 }
 
 .navbar__links {
@@ -61,14 +67,15 @@ body {
 .navbar__links:hover {
     color: #fff;
 }
+
 .navbar__btn .button {
     background-color: white; /* White background */
     color: #085a00; /* Green text */
-    padding: 0.5rem 1rem; /* Adjust padding for better spacing */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    font-weight: 500; /* Optional: Makes the text slightly bold */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar__btn .button:hover {
@@ -79,15 +86,15 @@ body {
 
 /* Mobile Menu */
 .navbar__toggle {
-    display: none;
+    display: none; /* Hidden by default */
     cursor: pointer;
     flex-direction: column;
 }
 
-.navbar__toggle div {
+.navbar__toggle .bar {
     width: 25px;
     height: 3px;
-    background: #085a00;
+    background: #fff; /* White bars for visibility */
     margin: 5px 0;
     transition: 0.3s;
 }
@@ -117,7 +124,7 @@ body {
 .video-section {
     position: relative;
     padding: 20px;
-    background-color: transparent; /* Remove the light background */
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +170,7 @@ html {
     align-items: flex-start;
     justify-content: center;
     padding: 40px 20px; /* Added padding to create space */
-    background-color: #085a00(134, 18, 18); /* Ensure background is white */
+    background-color: white; /* Ensure background is white */
 }
 
 .main__container {
@@ -177,6 +184,7 @@ html {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the container */
 }
 
 /* Image container */
@@ -229,7 +237,7 @@ html {
 
     .main__img--container {
         width: 100%;
-        height: 50vh;
+        height: auto; /* Adjust height for mobile */
     }
 
     .main__content {
@@ -293,4 +301,60 @@ html {
         font-size: 1rem;
         padding: 8px 16px;
     }
+}
+/* Donation Instructions Section */
+.donation-instructions {
+    display: none; /* Hidden by default */
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.donation-instructions h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #085a00;
+}
+
+.donation-instructions p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.donation-instructions ol {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.donation-instructions li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.donation-instructions address {
+    font-style: normal;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.donation-instructions .donate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #085a00;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+.donation-instructions .donate-button:hover {
+    background-color: #0a7a00;
 }

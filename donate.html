@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to Nadeem Khan's Campaign</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Nadeem Khan for Murphy Council</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="index.html#introduction" class="navbar__links">Introduction</a></li>
+                <li class="navbar__item"><a href="index.html" class="navbar__links">Video</a></li>
+                <li class="navbar__btn"><a href="donate.html" class="button">Donate</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Donation Instructions Section -->
+    <section class="donation-instructions">
+        <div class="donation-instructions__container">
+            <h2>How to Donate</h2>
+            <p>Thank you for supporting Nadeem Khan's campaign! Here’s how you can contribute:</p>
+            <ol>
+                <li><strong>Online Donation:</strong> Click the button below to donate securely online.</li>
+                <li><strong>Mail a Check:</strong> Send a check payable to <em>"Nadeem Khan Campaign"</em> to the following address:
+                    <address>
+                        Nadeem Khan Campaign<br>
+                        123 Murphy Street<br>
+                        Murphy, TX 75094
+                    </address>
+                </li>
+                <li><strong>In-Person Donation:</strong> Visit our campaign office to donate in person. Our office is located at:
+                    <address>
+                        123 Murphy Street<br>
+                        Murphy, TX 75094
+                    </address>
+                </li>
+            </ol>
+            <a href="https://your-donation-link.com" class="donate-button" target="_blank">Donate Online</a>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Toggle mobile menu
+        const mobileMenu = document.querySelector('.navbar__toggle');
+        const navMenu = document.querySelector('.navbar__menu');
+
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -36,3 +36,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+// Toggle donation instructions
+const donateButton = document.getElementById('donate-button');
+const donationInstructions = document.getElementById('donation-instructions');
+
+donateButton.addEventListener('click', () => {
+    if (donationInstructions.style.display === 'none' || donationInstructions.style.display === '') {
+        donationInstructions.style.display = 'block'; // Show instructions
+    } else {
+        donationInstructions.style.display = 'none'; // Hide instructions
+    }
+});
