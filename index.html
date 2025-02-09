@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadeem for Murphy City</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png"> <!--favicon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Google font-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Nadeem Khan for Murphy Council</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="#introduction" class="navbar__links">Introduction</a></li>
+                <li class="navbar__item"><a href="/" class="navbar__links">Video</a></li>
+                <li class="navbar__btn"><a href="#donate" class="button">Donate</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   <!-- Video Section with Background Image -->
+<section class="video-section">
+    <div class="video-background">
+        <img src="images/backgroundf1.png" alt="Background Image" class="video-background__image">
+    </div>
+    <div class="video-container">
+        <video controls width="100%">
+            <source src="video/.mp4" type="video/mp4">
+            <source src="videos/your-video-file.webm" type="video/webm">
+        </video>
+    </div>
+</section>
+
+    <!-- Main Section (Image and Text) -->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__img--container">
+                <img src="images/img1.JPG" alt="first pic" id="main__img">
+            </div>
+            <div class="main__content">
+                <h1>NADEEM KHAN</h1>
+                <h2 id="introduction">Introduction</h2>
+                <p> We are pleased to announce that Nadeem Khan is running for Murphy City Council Place 1 in the May 3rd, 2025, election. He is challenging incumbent Elizabeth Abraham.<br>
+
+                    <br>Mr. Khan has a strong record of public service, having served three terms with the Murphy Community Development Corporation (MCDC). He currently holds the position of vice chair of the combined Murphy Community Development Corporation (MCDC) and Murphy Municipal Development District (MMDD).
+                    
+                    A dedicated Murphy resident since 2007, Mr. Khan, is deeply committed to his community. Balancing his full-time job and family, he volunteers countless hours weekly with the EPIC security team.<br>
+                    
+                    <br> Mr. Khan has already garnered endorsement from a Murphy City Councilor and several prominent community leaders.
+                    
+                    His campaign is centered on addressing critical issues such as rising electricity, water costs, and traffic congestion.<br>
+                    
+                    <br>As a council member, Mr. Khan will be working with the City of Murphy in creating policies, adopting budgets, and appointing key city officials. He will oversee areas including land use, public utilities, tax rates, and infrastructure planning. His role will also include approving contracts, setting spending priorities, and ensuring effective city management.
+                    
+                    Mr. Khan has actively worked with religious leaders to foster interfaith dialogue and is committed to engaging with Murphy's diverse communities.<br>
+                    
+                    <br> As a council member, Mr. Khan pledges to uphold fairness and non-discrimination based on national origin, religion, race, or color.<br>
+                    
+                    <br> We encourage you to elect Nadeem Khan for Murphy City Council Place 1.
+                    
+                    Sincerely,
+                    
+                    Campaign Team
+                </p>
+            </div>
+        </div>
+    </div>
+
+       <!-- Donation Section -->
+       <section id="donate" class="donation-section">
+        <div class="donation-container">
+            <h2>Support Nadeem Khan's Campaign</h2>
+            <p>Your contribution helps us make a difference in our community.</p>
+            <a href="https://your-donation-link.com" class="donate-button" target="_blank">Donate Now</a>
+        </div>
+    </section>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent default jump behavior
+                const targetId = this.getAttribute('href'); // Get the target ID
+                const targetElement = document.querySelector(targetId); // Find the target element
+                if (targetElement) {
+                    const offset = 80; // Adjust this value to match your navbar height
+                    const targetPosition = targetElement.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Main JavaScript File -->
+    <script src="main.js"></script>
+</body>
+</html>

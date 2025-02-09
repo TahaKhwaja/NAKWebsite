@@ -1,0 +1,296 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', sans-serif;
+}
+
+/* Set light green background for the whole page */
+body {
+    background-color: #d4edda; /* Light green background */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #085a00;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 0 20px;
+}
+
+.navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#navbar__logo {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #ffffff; /* Changed to black */
+    font-weight: bold;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar__item {
+    margin: 0 ;
+}
+
+.navbar__links {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    transition: 0.3s;
+}
+
+.navbar__links:hover {
+    color: #fff;
+}
+.navbar__btn .button {
+    background-color: white; /* White background */
+    color: #085a00; /* Green text */
+    padding: 0.5rem 1rem; /* Adjust padding for better spacing */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Optional: Makes the text slightly bold */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.navbar__btn .button:hover {
+    background-color: #085a00; /* Green background on hover */
+    color: white; /* White text on hover */
+    border: 2px solid white; /* Optional: Adds a border on hover */
+}
+
+/* Mobile Menu */
+.navbar__toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.navbar__toggle div {
+    width: 25px;
+    height: 3px;
+    background: #085a00;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 960px) {
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: #085a00;
+        text-align: center;
+    }
+
+    .navbar__menu.active {
+        display: flex;
+    }
+
+    .navbar__toggle {
+        display: flex;
+    }
+}
+
+/* Video Section */
+.video-section {
+    position: relative;
+    padding: 20px;
+    background-color: transparent; /* Remove the light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure the background image doesn't overflow */
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the background behind the video */
+}
+
+.video-background__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire section */
+    opacity: 0.8; /* Increased opacity to make the background less faded */
+}
+
+.video-container {
+    width: 90%;
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    z-index: 1; /* Ensure the video is above the background */
+}
+
+video {
+    border-radius: 8px; /* Rounded corners for the video */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main Section */
+.main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 20px; /* Added padding to create space */
+    background-color: #085a00(134, 18, 18); /* Ensure background is white */
+}
+
+.main__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image container */
+.main__img--container {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.main__img--container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text content container */
+.main__content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    max-width: 100%;
+    overflow: hidden; /* Prevent text overflow */
+}
+
+.main__content h1 {
+    font-size: 2.5rem;
+    color: #085a00;
+    margin-bottom: 10px;
+}
+
+.main__content h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.main__content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .main__container {
+        flex-direction: column;
+    }
+
+    .main__img--container {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .main__content {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Donation Section */
+.donation-section {
+    padding: 40px 20px;
+    background-color: #085a00;
+    color: white;
+    text-align: center;
+    margin-top: 40px; /* Adds space above the donation section */
+}
+
+.donation-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.donation-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.donation-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.donate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff; /* White button */
+    color: #085a00; /* Green text */
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.donate-button:hover {
+    background-color: #085a00; /* Green background on hover */
+    color: white; /* White text on hover */
+    border: 2px solid white; /* White border on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .donation-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .donation-container p {
+        font-size: 1rem;
+    }
+
+    .donate-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
