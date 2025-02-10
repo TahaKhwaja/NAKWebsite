@@ -170,7 +170,7 @@ html {
     align-items: flex-start;
     justify-content: center;
     padding: 40px 20px; /* Added padding to create space */
-    background-color: #aad4aa; /* Ensure background is green */
+    background: linear-gradient(to bottom, #085a00, #aad4aa);
 }
 
 .main__container {
