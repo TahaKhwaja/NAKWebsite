@@ -14,7 +14,7 @@ html, body {
 
 /* Set light green background for the whole page */
 body {
-    background-color: #d4edda; /* Light green background */
+    background-color: #aad4aa; /* Light green background */
 }
 
 /* Navbar */
@@ -170,7 +170,7 @@ html {
     align-items: flex-start;
     justify-content: center;
     padding: 40px 20px; /* Added padding to create space */
-    background-color: white; /* Ensure background is white */
+    background-color: #aad4aa; /* Ensure background is white */
 }
 
 .main__container {
@@ -357,4 +357,20 @@ html {
 
 .donation-instructions .donate-button:hover {
     background-color: #0a7a00;
+}
+@media screen and (max-width: 960px) {
+    .navbar__menu {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: #085a00;
+        text-align: center;
+    }
+
+    .navbar__menu.active {
+        display: flex; /* Show when active */
+    }
 }
