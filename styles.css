@@ -98,7 +98,6 @@ body {
     margin: 5px 0;
     transition: 0.3s;
 }
-
 @media screen and (max-width: 960px) {
     .navbar__menu {
         display: none;
@@ -374,6 +373,7 @@ html {
         display: flex; /* Show when active */
     }
 }
+/*Zelle Donation image*/
 #donation__image {
     width: 500px; /* Set a smaller size for the image */
     height: 500px; /* Maintain aspect ratio */
@@ -384,4 +384,19 @@ html {
 .donation-container {
     text-align: center; /* Centers text and inline elements */
 }
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    #donation__image {
+        flex-direction: column;
+    }
 
+    #donation__image {
+        width: 100%;
+        height: auto; /* Adjust height for mobile */
+    }
+
+    #donation__image  {
+        width: 100%;
+        text-align: center;
+    }
+}
