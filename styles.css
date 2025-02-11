@@ -374,3 +374,14 @@ html {
         display: flex; /* Show when active */
     }
 }
+#donation__image {
+    width: 500px; /* Set a smaller size for the image */
+    height: 500px; /* Maintain aspect ratio */
+    display: block; /* Make the image a block-level element to break to the next line */
+    margin: 10px auto; /* Center the image horizontally and add some space above and below */
+}
+
+.donation-container {
+    text-align: center; /* Centers text and inline elements */
+}
+
