@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nadeem for Murphy City</title>
-    <!--Google analytics code-->
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MGKC1QE96C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGKC1QE96C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-MGKC1QE96C');
+    </script>
 
-  gtag('config', 'G-MGKC1QE96C');
-</script>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png"> <!--favicon-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Google font-->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Playfair+Display:wght@400..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/" id="navbar__logo">
-                Nadeem  Khan for Murphy City
-            </a>
+            <a href="/" id="navbar__logo">Nadeem Khan for Murphy City</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -34,25 +34,26 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item"><a href="#introduction" class="navbar__links">Mission</a></li>
-                <li class="navbar__item"><a href="/" class="navbar__links">Video</a></li>
+                <li class="navbar__item"><a href="#video-section" class="navbar__links">Video</a></li>
                 <li class="navbar__btn"><a href="#donate" class="button">Donate</a></li>
             </ul>
         </div>
     </nav>
-   <!-- Video Section with Background Image -->
-<section class="video-section">
-    <div class="video-background">
-        <img src="images/backgroundf1.png" alt="Background Image" class="video-background__image">
-    </div>
-    <div class="video-container">
-        <video controls width="100%">
-            <source src="video/.mp4" type="video/mp4">
-            <source src="videos/your-video-file.webm" type="video/webm">
-        </video>
-    </div>
-</section>
 
-    <!-- Main Section (Image and Text) -->
+    <!-- Video Section -->
+    <section class="video-section" id="video-section">
+        <div class="video-background">
+            <img src="images/backgroundf1.png" alt="Background Image" class="video-background__image">
+        </div>
+        <div class="video-container">
+            <video controls width="100%">
+                <source src="videos/your-video.mp4" type="video/mp4">
+                <source src="videos/your-video-file.webm" type="video/webm">
+            </video>
+        </div>
+    </section>
+
+    <!-- Main Section -->
     <div class="main">
         <div class="main__container">
             <div class="main__img--container">
@@ -60,11 +61,11 @@
             </div>
             <div class="main__content">
                 <h1><strong><center>Nadeem Khan</center></strong></h1>
-                <h2 id="introduction">Unite for Progress, Vote for Change</h2>
+                <h2 id="introduction">The Progress that Matters, the Change you Deserve</h2>
                 <p>I am excited to announce my candidacy for Murphy City Council Place 1 for the election on May 3rd, 2025. I am running to challenge the incumbent, Elizabeth Abraham. <br>
 
-                    <br>I have a strong record of public service, having served three terms with the Murphy Community Development Corporation (MCDC). Currently, 
-                    I hold the position of vice chair of the combined Murphy Community Development Corporation (MCDC) and Murphy Municipal Development District (MMDD). 
+                    <br>I have a strong record of public service, having served three terms with the Murphy Community Development Corporation. Currently, 
+                    I hold the position of vice chair of the combined Murphy Community Development Corporation and Murphy Municipal Development District. 
                     As a dedicated Murphy resident since 2007, I am deeply committed to our community. While balancing my full-time job and family responsibilities, 
                     I also volunteer countless hours each week with the EPIC security team.
 
@@ -83,36 +84,36 @@
             </div>
         </div>
     </div>
-<!-- Donation Section -->
-<section id="donate" class="donation-section">
-    <div class="donation-container">
-        <h2>Support Nadeem Khan's Campaign</h2>
-        <p>Your contribution helps us make a difference in our community.</p>
-        <button id="donate-button" class="donate-button">Donate Now</button>
 
-        <!-- Collapsible Donation Instructions -->
-        <div id="donation-instructions" class="donation-instructions">
-            <h2>How to Donate</h2>
-            <p>Thank you for supporting Nadeem Khan's campaign!</p>
-            <ol>
-                <li><strong>Zelle Donation:</strong> send your donation to <strong>nadeemformurphycity@gmail.com</strong></li>
-                <img src="images/Zelle.PNG" alt="Donate" id="donation__image">
-                </li>
-            </ol>
+    <!-- Donation Section -->
+    <section id="donate" class="donation-section">
+        <div class="donation-container">
+            <h2>Support Nadeem Khan's Campaign</h2>
+            <p>Your contribution helps us make a difference in our community.</p>
+            <button id="donate-button" class="donate-button">Donate Now</button>
+
+            <!-- Collapsible Donation Instructions -->
+            <div id="donation-instructions" class="donation-instructions">
+                <h2>How to Donate</h2>
+                <p>Thank you for supporting Nadeem Khan's campaign!</p>
+                <ol>
+                    <li><strong>Zelle Donation:</strong> send your donation to <strong>nadeemformurphycity@gmail.com</strong></li>
+                    <img src="images/Zelle.PNG" alt="Donate" id="donation__image">
+                </ol>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Smooth Scrolling Script -->
     <script>
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault(); // Prevent default jump behavior
-                const targetId = this.getAttribute('href'); // Get the target ID
-                const targetElement = document.querySelector(targetId); // Find the target element
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
                 if (targetElement) {
-                    const offset = 80; // Adjust this value to match your navbar height
+                    const offset = 80;
                     const targetPosition = targetElement.offsetTop - offset;
                     window.scrollTo({
                         top: targetPosition,
@@ -121,9 +122,15 @@
                 }
             });
         });
+
+        // Toggle Donation Instructions
+        document.getElementById("donate-button").addEventListener("click", function() {
+            document.getElementById("donation-instructions").classList.toggle("show");
+        });
     </script>
 
     <!-- Main JavaScript File -->
     <script src="main.js"></script>
+
 </body>
 </html>
